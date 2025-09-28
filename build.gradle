@@ -373,6 +373,7 @@ project(':iceberg-core') {
     testImplementation libs.mockserver.netty
     testImplementation libs.mockserver.client.java
     testImplementation libs.sqlite.jdbc
+    testImplementation libs.postgresql.jdbc
     testImplementation libs.derby.core
     testImplementation libs.derby.tools
     testImplementation project(path: ':iceberg-api', configuration: 'testArtifacts')
@@ -505,6 +506,7 @@ project(':iceberg-aws') {
     testImplementation project(path: ':iceberg-api', configuration: 'testArtifacts')
     testImplementation libs.esotericsoftware.kryo
     testImplementation libs.sqlite.jdbc
+    testImplementation libs.postgresql.jdbc
     testImplementation libs.testcontainers
     testImplementation libs.testcontainers.junit.jupiter
     testImplementation libs.testcontainers.minio
@@ -1070,6 +1072,7 @@ project(':iceberg-open-api') {
     testFixturesImplementation libs.jetty.servlet
     testFixturesImplementation libs.jetty.server
     testFixturesImplementation libs.sqlite.jdbc
+    testFixturesImplementation libs.postgresql.jdbc
 
     testFixturesCompileOnly libs.apiguardian
 
