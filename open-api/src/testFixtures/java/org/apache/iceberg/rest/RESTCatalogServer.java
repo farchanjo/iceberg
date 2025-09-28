@@ -75,8 +75,9 @@ public class RESTCatalogServer {
     }
   }
 
-  private CatalogContext initializeBackendCatalog() throws IOException {
+  private CatalogContext initializeBackendCatalog() throws IOException, ClassNotFoundException {
     // Translate environment variables to catalog properties
+    Class.forName("org.postgresql.Driver");
     Map<String, String> catalogProperties = Maps.newHashMap(RCKUtils.environmentCatalogConfig());
     catalogProperties.putAll(config);
 
