@@ -86,6 +86,7 @@ spark34 = "3.4.4"
 spark35 = "3.5.7"
 spark40 = "4.0.1"
 sqlite-jdbc = "3.50.3.0"
+postgresql-jdbc = "42.7.8"
 testcontainers = "1.21.3"
 tez08 = { strictly = "0.8.4"}  # see rich version usage explanation above
 
@@ -216,6 +217,7 @@ nessie-versioned-storage-inmemory-tests = { module = "org.projectnessie.nessie:n
 nessie-versioned-storage-testextension = { module = "org.projectnessie.nessie:nessie-versioned-storage-testextension", version.ref = "nessie" }
 orc-tools = { module = "org.apache.orc:orc-tools", version.ref = "orc" }
 sqlite-jdbc = { module = "org.xerial:sqlite-jdbc", version.ref = "sqlite-jdbc" }
+postgresql-jdbc = { module = "org.postgresql:postgresql", version.ref = "postgresql-jdbc" }
 testcontainers = { module = "org.testcontainers:testcontainers", version.ref = "testcontainers" }
 testcontainers-junit-jupiter = { module = "org.testcontainers:junit-jupiter", version.ref = "testcontainers" }
 testcontainers-minio = { module = "org.testcontainers:minio", version.ref = "testcontainers" }
